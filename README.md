@@ -60,7 +60,7 @@ The file structure is as follows.<br>
 ## 3 Running requirements
 All codes are developed based on python 3.7, anaconda3, and the CNNs are implemented by pytorch 1.0.  Please install related libraries according the codes, which are common libraries such as numpy, PIL, matplotlib, scipy, etc.
     
-## 4 running steps
+## 4 Running steps
 I use the MS-CNN to classify images from the NR dataset, with the ratios of the training/validation/testing are 0.1/0.1/0.8. Therefore, the parameters in the data normalization are the mean and std of the NR dataset. If you change the type of datasets, please re-compute the mean and std.   Furthermore, it is convenient to change the type of datasets or the ratios of training/validation/testing in the file ‘datagenerate.py’. <br>
 One could realize the MS-CNN on the basis of Alex as follows.<br>
 1. open file ‘data/datagenerate.py’, add the path of the target dataset at line 13, and run the file.
@@ -78,6 +78,5 @@ One could realize the MS-CNN on the basis of Alex as follows.<br>
 14. The MS-CNN could also be implemented based on ResNet or VGG by using the codes in directory ‘based_on_ResNet’ or ‘based_on_VGG’.
 
 
-## 5 others
-
+## 5 Others
 Welcome to discuss with me. My e-mail is  luojianqiao@my.swjtu.edu.cn, or 18215675028@163.com. Without my permission, using this repository for academic publication or business is not allowed . 
