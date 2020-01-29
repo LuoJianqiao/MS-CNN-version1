@@ -66,8 +66,8 @@ while est_iter<est_max :
             for n in range(Nd):               
                 phisum=0.0
                 for k in range(K):
-                    phi[n,k]=beta[k,int(mid_word[n])] \
-                            *pi[k,int(hig_word[n])] \
+                    phi[n,k]=beta[k,int(hig_word[n])] \
+                            *pi[k,int(mid_word[n])] \
                             *np.exp(dig[k])
                     phisum+=phi[n,k]
                 phi[n,:]=phi[n,:]/phisum
@@ -92,10 +92,10 @@ while est_iter<est_max :
             
         for k in range(K):
             for n in range(Nd):                
-                ss_topic_word_beta[k,int(mid_word[n])]+=phi[n,k]
+                ss_topic_word_beta[k,int(hig_word[n])]+=phi[n,k]
                 ss_topic_beta[k]+=phi[n,k]
                 
-                ss_topic_word_pi[k,int(hig_word[n])]+=phi[n,k]
+                ss_topic_word_pi[k,int(mid_word[n])]+=phi[n,k]
                 ss_topic_pi[k]+=phi[n,k]
     
     for k in range(K):
